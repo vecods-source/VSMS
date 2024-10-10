@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    background-image: url("assets/Vector.svg");
+    background-size: cover;
+    height: 100vh;
+    background-color: #26335D;
+}
+.header
+{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #26335D;
+    z-index: 1000;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+.logo{
+    margin: 10px 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in 0s;
+
+}
+.listNav
+{
+    text-decoration: none;
+    color: white;
+
+}
+.content{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #182758;
+    border-radius: 5%;
+    padding: 15px;
+    gap: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.profile:hover {
+    box-shadow: 0 0 15px 5px rgba(52, 152, 219, 0.8); 
+}
+
+
+a{
+    transition: all 0.1s ease-in 0s;
+    display: inline-block;
+    font-size: larger;
+}
+.profile a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.content a:hover{
+    color: rgb(27, 176, 235);
+    transform: scale(1.2);
+}
+
+.shortReview{
+    margin: 0 10%;
+    margin-top: 170px;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+.shortReview h1{
+    width: 542px;
+    height: 160px;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 50px;
+    padding: 10px 0 0 0;
+    color: #FFFFFF;
+
+}
+.shortReview h4{
+    padding: 22px 0 0 10px;
+    width: 408px;
+    height: 60px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    font-size: 20px;
+}
+.shortReview p {
+    padding: 0 0 0 10px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.leftBoy{
+    border: solid #d9d2d21c;
+    width: 400px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    float: right;
+    padding: 10px 10px 0 10px;
+}
+.firstText{
+    display: inline-block;
+}
+
