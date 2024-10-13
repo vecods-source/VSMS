@@ -1,279 +1,267 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    position: relative;
-    background-image: url("assets/Vector.svg");
-    background-repeat: no-repeat;
-    background-color: #26335D !important; 
-    background-size: 2321px;
+body {
+  position: relative;
+  background-image: url("assets/Vector.svg");
+  background-repeat: no-repeat;
+  background-color: #26335d !important;
+  background-size: 2321px;
 }
-.header
-{
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-color: #26335D;
-    z-index: 1000;
-    font-family: 'Montserrat';
-    font-style: normal;
+.header {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #26335d;
+  z-index: 1000;
+  font-family: "Montserrat";
+  font-style: normal;
 }
-.logo{
-    margin: 10px 10%;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.3s ease-in 0s;
-
+.logo {
+  margin: 10px 10%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in 0s;
 }
-.listNav
-{
-    text-decoration: none;
-    color: white;
-
+.listNav {
+  text-decoration: none;
+  color: white;
 }
-.content{
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    align-items: center;
+.content {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
 }
 
 .profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #182758;
-    border-radius: 5%;
-    padding: 15px;
-    gap: 10px;
-    transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #182758;
+  border-radius: 5%;
+  padding: 15px;
+  gap: 10px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .profile:hover {
-    box-shadow: 0 0 15px 5px rgb(28 29 30 / 28%)
+  box-shadow: 0 0 15px 5px rgb(28 29 30 / 28%);
 }
 
+a {
+  transition: all 0.1s ease-in 0s;
+  display: inline-block;
+  font-size: larger;
+}
+.profile a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.content a:hover {
+  color: rgb(27, 176, 235);
+  transform: scale(1.2);
+}
 
-a{
-    transition: all 0.1s ease-in 0s;
-    display: inline-block;
-    font-size: larger;
+.shortReview {
+  margin: 0 10%;
+  margin-top: 170px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
 }
-.profile a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+.shortReview h1 {
+  width: 542px;
+  height: 160px;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 50px;
+  padding: 10px 0 0 0;
+  color: #ffffff;
 }
-.content a:hover{
-    color: rgb(27, 176, 235);
-    transform: scale(1.2);
-}
-
-.shortReview{
-    margin: 0 10%;
-    margin-top: 170px;
-    color: #FFFFFF;
-    font-family: 'Montserrat';
-    font-style: normal;
-}
-.shortReview h1{
-    width: 542px;
-    height: 160px;
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 50px;
-    padding: 10px 0 0 0;
-    color: #FFFFFF;
-
-}
-.shortReview h4{
-    padding: 22px 0 0 10px;
-    width: 408px;
-    height: 60px;
-    font-weight: 300;
-    letter-spacing: 0.4px;
-    font-size: 20px;
+.shortReview h4 {
+  padding: 22px 0 0 10px;
+  width: 408px;
+  height: 60px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  font-size: 20px;
 }
 .shortReview p {
-    padding: 0 0 0 10px;
-    font-weight: 700;
-    line-height: 24px;
+  padding: 0 0 0 10px;
+  font-weight: 700;
+  line-height: 24px;
 }
-.leftBoy{
-    border: solid #d9d2d21c;
-    width: 400px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    float: right;
-    padding: 10px 10px 0 10px;
+.leftBoy {
+  border: solid #d9d2d21c;
+  width: 400px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  float: right;
+  padding: 10px 10px 0 10px;
 }
-.firstText{
-    display: inline-block;
-}
-
-.benefits{
-    margin-top: 250px;
-    padding: 0 10%;
+.firstText {
+  display: inline-block;
 }
 
+.benefits {
+  margin-top: 250px;
+  padding: 0 10%;
+}
 
-.benefits > .BigContainer .feat{
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: left;
-    flex-basis: 22%;  /* Each box takes up about 22% of the container width */
-    max-width: 300px; 
-    transition: transform 0.3s, box-shadow 0.3s;
-    
+.benefits > .BigContainer .feat {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  flex-basis: 22%; /* Each box takes up about 22% of the container width */
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 .benefits > .BigContainer .feat {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 .benefits > .BigContainer .feat:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .benefits > .BigContainer .feat h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    position: relative;
-    padding-bottom: 10px; /* Add space for the line */
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px; /* Add space for the line */
 }
 
 .benefits > .BigContainer .feat h3::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50px; /* Length of the line */
-    height: 3px; /* Thickness of the line */
-    background-color: #ff6b6b; /* Line color */
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px; /* Length of the line */
+  height: 3px; /* Thickness of the line */
+  background-color: #ff6b6b; /* Line color */
 }
 
 .benefits > .BigContainer p {
-    font-size: 1rem;
-    line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .benefits > .BigContainer img {
-    width: 50px;
-    height: auto;
-    margin-bottom: 15px;
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
 }
 
-
-.benefits > .BigContainer > .leftCard{
-    background: linear-gradient(to right, #2c799a, #26335d);
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    float: left;
-    width: 37%;
-    color: white;
-    margin-top: 30px;
-    height: 329px;
-
+.benefits > .BigContainer > .leftCard {
+  background: linear-gradient(to right, #2c799a, #26335d);
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  float: left;
+  width: 37%;
+  color: white;
+  margin-top: 30px;
+  height: 329px;
 }
 .benefits > .BigContainer > .leftCard h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: 'Montserrat';
-    letter-spacing: -1px;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+  letter-spacing: -1px;
 }
 .benefits > .BigContainer > .leftCard p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #ffffffe3;
-    font-family: 'Montserrat';
-    line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #ffffffe3;
+  font-family: "Montserrat";
+  line-height: 1.6;
 }
 a {
-    display: inline-block;
-    background-color: #5c688d; 
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  background-color: #5c688d;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
 }
-body > section.FirstView > div > div > div.profile > a{
-    background-color: transparent;
-    padding: 5px;
+body > section.FirstView > div > div > div.profile > a {
+  background-color: transparent;
+  padding: 5px;
 }
-body > section.shortReview > div > div{
-    margin-top: 45px;
-
+body > section.shortReview > div > div {
+  margin-top: 45px;
 }
 a:hover {
-    background-color: #394a7f;  
+  background-color: #394a7f;
 }
 .btn-filled {
-    background-color: #083D77;  /* Dark blue */
-    color: white;
-    border: none;
+  background-color: #083d77; /* Dark blue */
+  color: white;
+  border: none;
 }
-a.btn{
-    margin: 10px;
+a.btn {
+  margin: 10px;
 }
 
 .btn-filled:hover {
-    background-color: #0A4D98;  /* Slightly lighter blue on hover */
+  background-color: #0a4d98; /* Slightly lighter blue on hover */
 }
 
 /* Outlined button with no background */
 .btn-outline {
-    background-color: transparent;
-    color: #083D77;  /* Dark blue */
-    border: 2px solid #083D77;
+  background-color: transparent;
+  color: #083d77; /* Dark blue */
+  border: 2px solid #083d77;
 }
 
 .btn-outline:hover {
-    background-color: #083D77;
-    color: white;  /* Invert colors on hover */
+  background-color: #083d77;
+  color: white; /* Invert colors on hover */
 }
 
 /* Button container to align them properly */
 .button-container {
-    margin-top: 20px;
-    display: inline-flex;
+  margin-top: 20px;
+  display: inline-flex;
 }
 
-.benefits > .BigContainer > .Feat-container
-{
-    float: right;
-    width: 50%;
-    display: flex;
-    gap: 10px;
-    justify-content: space-evenly;
+.benefits > .BigContainer > .Feat-container {
+  float: right;
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
 }
 
-.benefits .top-Feat{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.benefits .top-Feat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.benefits .low-Feat{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.benefits .low-Feat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.space{
-    height: 1155px;
-    width: 100%;
+.space {
+  height: 1155px;
+  width: 100%;
 }
