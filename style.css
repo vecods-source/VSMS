@@ -7,9 +7,9 @@
 body{
     position: relative;
     background-image: url("assets/Vector.svg");
-    background-size: cover;
-    height: 100vh;
-    background-color: #26335D;
+    background-repeat: no-repeat;
+    background-color: #26335D !important; 
+    background-size: 2321px;
 }
 .header
 {
@@ -59,7 +59,7 @@ body{
 }
 
 .profile:hover {
-    box-shadow: 0 0 15px 5px rgba(52, 152, 219, 0.8); 
+    box-shadow: 0 0 15px 5px rgb(28 29 30 / 28%)
 }
 
 
@@ -98,7 +98,7 @@ a{
     padding: 22px 0 0 10px;
     width: 408px;
     height: 60px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.4px;
     font-size: 20px;
 }
@@ -119,3 +119,161 @@ a{
     display: inline-block;
 }
 
+.benefits{
+    margin-top: 250px;
+    padding: 0 10%;
+}
+
+
+.benefits > .BigContainer .feat{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    flex-basis: 22%;  /* Each box takes up about 22% of the container width */
+    max-width: 300px; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+.benefits > .BigContainer .feat {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.benefits > .BigContainer .feat:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.benefits > .BigContainer .feat h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 10px; /* Add space for the line */
+}
+
+.benefits > .BigContainer .feat h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px; /* Length of the line */
+    height: 3px; /* Thickness of the line */
+    background-color: #ff6b6b; /* Line color */
+}
+
+.benefits > .BigContainer p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.benefits > .BigContainer img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+.benefits > .BigContainer > .leftCard{
+    background: linear-gradient(to right, #2c799a, #26335d);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    float: left;
+    width: 37%;
+    color: white;
+    margin-top: 30px;
+    height: 329px;
+
+}
+.benefits > .BigContainer > .leftCard h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    letter-spacing: -1px;
+}
+.benefits > .BigContainer > .leftCard p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ffffffe3;
+    font-family: 'Montserrat';
+    line-height: 1.6;
+}
+a {
+    display: inline-block;
+    background-color: #5c688d; 
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+body > section.FirstView > div > div > div.profile > a{
+    background-color: transparent;
+    padding: 5px;
+}
+body > section.shortReview > div > div{
+    margin-top: 45px;
+
+}
+a:hover {
+    background-color: #394a7f;  
+}
+.btn-filled {
+    background-color: #083D77;  /* Dark blue */
+    color: white;
+    border: none;
+}
+a.btn{
+    margin: 10px;
+}
+
+.btn-filled:hover {
+    background-color: #0A4D98;  /* Slightly lighter blue on hover */
+}
+
+/* Outlined button with no background */
+.btn-outline {
+    background-color: transparent;
+    color: #083D77;  /* Dark blue */
+    border: 2px solid #083D77;
+}
+
+.btn-outline:hover {
+    background-color: #083D77;
+    color: white;  /* Invert colors on hover */
+}
+
+/* Button container to align them properly */
+.button-container {
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.benefits > .BigContainer > .Feat-container
+{
+    float: right;
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.benefits .top-Feat{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefits .low-Feat{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.space{
+    height: 1155px;
+    width: 100%;
+}
