@@ -68,7 +68,6 @@ a {
   color: rgb(255, 255, 255);
 }
 .content a:hover {
-  color: rgb(27, 176, 235);
   transform: scale(1.2);
 }
 
@@ -224,14 +223,15 @@ a.btn {
 }
 
 .btn-outline {
-  background-color: transparent;
-  color: #083d77; 
-  border: 2px solid #083d77;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 .btn-outline:hover {
   background-color: #083d77;
   color: white; 
+  border-color: #083d77;
 }
 
 
