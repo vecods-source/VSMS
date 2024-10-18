@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students List</title>
+    <link rel="stylesheet" href="stdntsList.css">
+</head>
+<body>
+        <div class="popup-stdnt">
+            <form id="admin-StudentForm" method="post">
+                <label for="idInput" id="label-id">ID</label>
+                <input type="text" id="idInput" class="stdnt-input" name="id">
+          
+                <label for="studentName" id="label-name">Name</label>
+                <input type="text" id="studentName" class="stdnt-input" name="studentName">
+          
+                <label for="studentGrade" id="label-grade">Grade</label>
+                <input type="text" id="studentGrade" class="stdnt-input" name="studentGrade">
+          
+                <label for="ClassNum" id="label-class">Class Number</label>
+                <input type="text" id="ClassNum" class="stdnt-input" name="ClassNum">
+          
+                <div class="sub-cont">
+                    <input id="post" class="submit-btn" type="submit" value="Cancel"  onclick="DoneSearch()">
+                    <input id="post" class="submit-btn" type="submit" value="Apply"  onclick="DoneSearch()">
+                    <input style="background-color: #E74040;" id="post" class="submit-btn" type="submit" value="Remove"  onclick="DoneSearch()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="stdnts-cont">
+        <h2><span>Registerd</span> Students List</h2>
+        <div class="find-stdnt"><input style="padding: 3px; margin-bottom: 5px;" type="text" name="stdntID" id="searchID" placeholder="Find By ID" autocomplete="off"></div>
+        <div class="stdnts-list">
+            <!-- Temp feilds for test -->
+            <div class="Row idFeild">
+                <p>ID</p>
+                <p>1</p>
+                <p>2</p>
+            </div>
+            <div class="Row nameFeild">
+                <p>Name</p>
+                <p>Mohmad Saad</p>
+                <p>Ibrahim Ezzat</p>
+                
+            </div>
+            <div class="Row classFeild">
+                <p>Class</p>
+                <p>3</p>
+                <p>2</p>
+                
+            </div>
+            <div class="Row gradeFeild">
+                <p>Grade</p>
+                <p>11</p>
+                <p>12</p>
+            </div>                                               
+        </div>
+    </div>
+</body>
+<script>
+
+    const inputBtn = document.getElementById("searchID");
+    const popup = document.querySelector(".popup-stdnt");
+    const body = document.querySelector("body");
+    inputBtn.addEventListener('keydown',function(event){
+        if (event.key === 'Enter') {
+            console.log("Oh no")
+            PerformSearch();
+        }
+
+    })
+    function PerformSearch(){
+        popup.classList.add("open-popup");
+        body.classList.add("hideBody");
+    }
+    function DoneSearch(){
+        popup.classList.remove("open-popup");
+        body.classList.remove("hideBody");
+    }
+</script>
+</html>
