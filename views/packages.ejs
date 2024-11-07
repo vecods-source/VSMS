@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>packages</title>
+    <link rel="stylesheet" href="pack.css">
+</head>
+
+<body>
+    <%-include("partials/header.ejs")%>
+    <div class="ourTeam-cont">
+        <div class="left">
+            <h2>Meet the GenZ Academy Team</h2>
+            <p>Our GenZ Academy team is a passionate group of innovators, educators, and tech enthusiasts,
+                 all dedicated to reshaping the future of learning. From seasoned developers to visionary designers, 
+                 each team member brings a unique blend of skills, creativity, and drive to every project. Together,
+                  we’re building a platform that empowers the next generation to learn, grow, and succeed in an ever-evolving world. Whether it’s
+                   crafting seamless user experiences, optimizing code, or managing complex projects,
+                 our team is committed to delivering an engaging, effective, and inspiring learning environment for all.
+            </p>
+            <h2>Greatest Achievements:</h2>
+            <p>
+                Creating a robust platform that has reached thousands of learners,
+                 optimizing tools that support educators, and innovating features
+                  that make learning interactive and accessible.
+            </p>
+            <h2>What We Love:</h2>
+            <p>Tackling challenges, pushing boundaries in tech and education, and celebrating every milestone along the way.</p>
+        </div>
+        <div class="right">
+            <img src="assets/team.svg" alt="our team image">
+        </div>
+    </div>
+    <div class="course-cont">
+        <h2>Our Popular Courses</h2>
+        <div class="white-bord-cont">
+            <div class="box1">
+                <div class="img-course-cont"><img src="assets/course1.webp" alt="course 1 image"></div>
+                <h2 class="title-course">From 0 to React Developer</h2>
+                <p class="descripe-course">
+                    No fluff. No outdated tutorials. 
+                    No overpriced bootcamp. 
+                    This React Developer Career Path is your step-by-step roadmap to go from beginner (at any age!) to getting hired as a React Developer.
+                </p>
+                <span class="author-course">by Mathew Glock</span>
+                <span class="price-course">$59.99</span>
+                <p class="feat-course">47.5 hours <span>|</span> 40 lessons</p>
+            </div>
+            <div class="box1">
+                <div class="img-course-cont"><img src="assets/course2.png" alt="course 2 image"></div>
+                <h2 class="title-course">Mastering JavaScript</h2>
+                <p class="descripe-course">
+                    Get a strong foundation in JavaScript. 
+                    Comprehensive, up-to-date, and practical, this course guides you from the basics to advanced topics, preparing you for real-world projects.
+                </p>
+                <span class="author-course">by Sarah Lee</span>
+                <span class="price-course">$49.99</span>
+                <p class="feat-course">30 hours <span>|</span> 25 lessons</p>
+            </div>
+            <div class="box1">
+                <div class="img-course-cont"><img src="assets/course3.jpg" alt="course 3 image"></div>
+                <h2 class="title-course">Python for Data Science</h2>
+                <p class="descripe-course">
+                    Dive into Python with a focus on data analysis. 
+                    Step-by-step guidance to help you understand data manipulation, visualization, and machine learning.
+                </p>
+                <span class="author-course">by Dr. Emma Chen</span>
+                <span class="price-course">$79.99</span>
+                <p class="feat-course">60 hours <span>|</span> 50 lessons</p>
+            </div>
+            <div class="box1">
+                <div class="img-course-cont"><img src="assets/course4.png" alt="course 4 image"></div>
+                <h2 class="title-course">Web Development</h2>
+                <p class="descripe-course">
+                    Full-stack web development from scratch. 
+                    Learn HTML, CSS, JavaScript, and backend fundamentals to build dynamic websites and web applications.
+                </p>
+                <span class="author-course">by John Doe</span>
+                <span class="price-course">$99.99</span>
+                <p class="feat-course">75 hours <span>|</span> 60 lessons</p>
+            </div>
+            <div class="box1">
+                <div class="img-course-cont"><img src="assets/course5.jpg" alt="course 5 image"></div>
+                <h2 class="title-course">Advanced CSS Techniques</h2>
+                <p class="descripe-course">
+                    Take your CSS skills to the next level. 
+                    This course covers animations, responsive design, and modern layout techniques for a professional finish.
+                </p>
+                <span class="author-course">by Linda Green</span>
+                <span class="price-course">$39.99</span>
+                <p class="feat-course">20 hours <span>|</span> 15 lessons</p>
+            </div>
+            <div class="box1">
+                <div class="img-course-cont"><img src="assets/course6.jpg" alt="course 6 image"></div>
+                <h2 class="title-course">Intro to Machine Learning</h2>
+                <p class="descripe-course">
+                    An introduction to machine learning concepts and algorithms. 
+                    Ideal for beginners, this course covers basics with hands-on projects to start your journey in ML.
+                </p>
+                <span class="author-course">by Alex Kim</span>
+                <span class="price-course">$69.99</span>
+                <p class="feat-course">55 hours <span>|</span> 45 lessons</p>
+            </div>
+        </div>
+    </div>
+    
+        
+    </div>
+    <div class="pack-cont">
+        <div class="tit-cont">
+            <h2>Flexible Subscription Packages</h2>
+            <p>Choose the subscription package that fits your goals. Whether you're looking
+                for essential resources, a full suite of learning tools, or
+                a personalized experience, we have an option tailored for you!</p>
+        </div>
+        <form method="post">
+            <div class="offers-cont">
+                <div class="offr">
+                    <h4>Basic</h4>
+                    <p>Get started with the essentials. Perfect for those who want to dip their toes into online learning
+                        and explore foundational resources.</p>
+                    <ul>
+                        <li>
+                            Core Courses ✅
+                        </li>
+                        <li>
+                            Progress Tracking ✅
+    
+                        </li>
+                        <li>
+                            Email Support ✅
+    
+                        </li>
+                    </ul>
+                    <button type="submit" formaction="./Basic">Submit</button>
+                </div>
+                <div class="offr">
+                    <h4>Standard</h4>
+                    <p>Our most popular plan, designed for dedicated learners looking to expand their knowledge and track
+                        progress with additional support.</p>
+                    <ul>
+                        <li>All Courses ✅</li>
+                        <li>
+                            Priority Support ✅
+                            </li>
+                        <li>
+                            Monthly Reviews ✅</li>
+                    </ul>
+                    <button type="submit" formaction="./Basic">Submit</button>
+
+                </div>
+                <div class="offr">
+                    <h4>Premium</h4>
+                    <p>Ideal for those who want a comprehensive learning experience with one-on-one guidance and exclusive
+                        resources.</p>
+                    <ul>
+                        <li>1-on-1 Coaching ✅
+                        </li>
+                        <li>Exclusive Webinars ✅
+                        </li>
+                        <li>Direct Chat ✅
+                        </li>
+                    </ul>
+                    <button type="submit" formaction="./Basic">Submit</button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <%-include("partials/footer.ejs")%>
+    <!-- .hover-effect{
+        scale: 1.1;
+    }
+    .img-effect{
+        filter: brightness(0.7);
+        transform: scale(1.1);
+    } -->
+    <script>
+        const boxes = document.querySelectorAll(".box1");
+
+        boxes.forEach((box) => {
+        const imageBox = box.querySelector(".img-course-cont > img");
+
+        box.addEventListener('mouseenter', () => {
+            box.classList.add('hover-effect');  
+            if (imageBox) {
+                imageBox.classList.add('img-effect');
+            }
+            console.log("Hello Mouse Enter");
+        });
+
+        box.addEventListener('mouseleave', () => {
+            box.classList.remove('hover-effect');  
+            if (imageBox) {
+                imageBox.classList.remove('img-effect');
+            }
+        });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Role</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+        *{
+            font-family: "Montserrat";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #26335d;
+            position: relative;
+        }
+        .ChooseContainer{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            animation: startUp 0.7s ease-in-out;
+        }
+        @keyframes startUp {
+            0%{
+                transform: scale(0.3);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .ChooseContainer .choose{
+            width: 260px;
+            height: 300px;
+            font-weight: 700;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 10px;
+            font-size: xx-large;
+            border: solid #d9d2d21c;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.795);
+            transition: all 0.2s ease-in;
+        }
+        .ChooseContainer .choose:hover{
+            transform: scale(1.1);
+        }
+        .choose{
+            margin: 10px;
+        }
+        html::-webkit-scrollbar, 
+        body::-webkit-scrollbar {
+        width: 12px; 
+        
+        }
+
+
+        html::-webkit-scrollbar, 
+        body::-webkit-scrollbar {
+        width: 12px; 
+        
+        }
+
+        html::-webkit-scrollbar-track, 
+        body::-webkit-scrollbar-track {
+        background-color: transparent; 
+        border-radius: 10px; 
+        }
+
+        html::-webkit-scrollbar-thumb, 
+        body::-webkit-scrollbar-thumb {
+        background-color: #4a61aa;
+        border-radius: 10px; 
+        border: 3px solid transparent; 
+        background-clip: padding-box; 
+        }
+
+    </style>
+</head>
+<body>
+    <%-include("partials/header.ejs")%>
+
+    <div class="ChooseContainer">
+        <h1 style="color: white;">Select <span style="color: #E74040;">Role</span></h1>
+        <div class="wbtns">
+            <button type="button" id="addStudentBtn" class="choose teacher" >Student</button>
+            <button type="button" id="addTeacherBtn" class="choose student" >Teacher</button>
+        </div>
+    </div>
+    <div class="emptyTest" style="height: 300px; width: 100%;"></div>
+
+    <%-include("partials/footer.ejs")%>
+</body>
+<script>
+    document.getElementById('addStudentBtn').addEventListener('click', function() {
+        window.location.href = "/add-student";
+    });
+    document.getElementById('addTeacherBtn').addEventListener('click', function() {
+        window.location.href = "/add-teacher";
+    });
+    
+</script>
+</html>

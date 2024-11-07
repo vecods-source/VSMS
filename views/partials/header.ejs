@@ -1,0 +1,99 @@
+<style>
+.header {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 124px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #26335d;
+  z-index: 1000;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+.logo {
+  margin: 10px 10%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in 0s;
+  height: 104px !important;
+}
+.listNav {
+  text-decoration: none;
+  color: white;
+}
+.content {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #182758;
+  border-radius: 5%;
+  padding: 15px;
+  gap: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.profile:hover {
+  box-shadow: 0 0 15px 5px rgb(28 29 30 / 28%);
+}
+
+a {
+    display: inline-block;
+    transition: all 0.1s ease-in 0s;
+    display: inline-block;
+    font-size: larger;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+a:hover {
+  background-color: #394a7f;
+}
+.profile a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+}
+.profile a:hover{
+    background-color: transparent;
+}
+.content a:hover {
+  transform: scale(1.2);
+}
+
+</style>
+<section class="FirstView">
+    <div class="header">
+      <div class="logo">
+        <div><img src="assets/flask.svg" width="40" alt="school logo" /><p style="color: white; text-align: center; font-weight: bold;">GenZ Academy</p></div>
+
+        <div class="content">
+          <li><a href="/main" class="listNav">Home</a></li>
+          <li><a href="/contact" class="listNav">Contact</a></li>
+          <li><a href="./adminControl" class="listNav">Control</a></li>
+          <li><a href="/FAQ" class="listNav">FAQ</a></li>
+          <li><a href="/pack" class="listNav">Packages</a></li>
+
+        </div>
+
+        <div class="profile">
+          <img src="assets/person.svg" width="30" />
+          <a href="profile.html">Tarek Ahmed</a>
+      </div>
+      </div>
+    </div>
+  </section>
+

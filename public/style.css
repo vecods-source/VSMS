@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+
+}
+body {
+  position: relative;
+  background-image: url("assets/Vector.svg");
+  background-repeat: no-repeat;
+  background-color: #26335d !important;
+  background-size: 2321px;
+}
+
+.shortReview {
+  margin: 0 10%;
+  margin-top: 170px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+.shortReview h1 {
+  width: 542px;
+  height: 160px;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 50px;
+  padding: 10px 0 0 0;
+  color: #ffffff;
+}
+.shortReview h4 {
+  padding: 22px 0 0 10px;
+  width: 408px;
+  height: 60px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+}
+.shortReview p {
+  padding: 0 0 0 10px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.leftBoy {
+  border: solid #d9d2d21c;
+  width: 400px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  float: right;
+  padding: 10px 10px 0 10px;
+}
+.firstText {
+  display: inline-block;
+}
+
+.benefits {
+  margin: 250px 0px;
+  padding: 0 10%;
+  height: 500px;
+}
+
+.benefits > .BigContainer .feat {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  flex-basis: 22%;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.benefits > .BigContainer .feat {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.benefits > .BigContainer .feat:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.benefits > .BigContainer .feat h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px; 
+}
+
+.benefits > .BigContainer .feat h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 33%; 
+  height: 3px; 
+  background-color: #ff6b6b; 
+}
+
+.benefits > .BigContainer p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.benefits > .BigContainer img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.benefits > .BigContainer > .leftCard {
+  background: linear-gradient(to right, #2c799a, #26335d);
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  float: left;
+  width: 37%;
+  color: white;
+  margin-top: 30px;
+  height: 329px;
+}
+.benefits > .BigContainer > .leftCard h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+  letter-spacing: -1px;
+}
+.benefits > .BigContainer > .leftCard p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #ffffffe3;
+  font-family: "Montserrat";
+  line-height: 1.6;
+}
+a {
+  display: inline-block;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+body > section.FirstView > div > div > div.profile > a {
+  background-color: transparent;
+  padding: 5px;
+}
+body > section.shortReview > div > div {
+  margin-top: 45px;
+}
+a:hover {
+  background-color: #394a7f;
+}
+.btn-filled {
+  background-color: #083d77; 
+  color: white;
+  border: none;
+}
+a.btn {
+  margin: 10px;
+}
+
+.btn-filled:hover {
+  background-color: #0a4d98; 
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-outline:hover {
+  background-color: #083d77;
+  color: white; 
+  border-color: #083d77;
+}
+
+
+.button-container {
+  margin-top: 20px;
+  display: inline-flex;
+}
+
+.benefits > .BigContainer > .Feat-container {
+  float: right;
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.benefits .top-Feat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefits .low-Feat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team .BigTeam
+{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 188px;
+}
+.team .BigTeam
+ .ourTeam{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  margin: 63px;
+}
+h2.header-our-team::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 51%;
+  background-color: red;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+body > section.team > div > div.ourTeam > a {
+  padding: 0;
+  margin-top: 25px;
+  color: #8D5CF6;
+}
+body > section.team > div > div.ourTeam > a:hover{
+  background-color: transparent;
+  transition: all 0.3s;
+  transform: translateX(5px);
+}
+body > section.team > div > div.ourTeam > h2{
+  width: 275px;
+  font-size: 43px;
+  letter-spacing: 0.2px;
+  line-height: 50px;
+}
+body > section.team > div > div.ourTeam > p{
+  width: 379px;
+  font-weight: 200;
+
+}
+.feedback-cont{
+  display: flex;
+  margin: 150px 10%;
+  justify-content: center;
+  gap: 75px;
+  color: white;
+}
+.vid1 video{
+  width: 657px;
+  height: 370px;
+  border-radius: 10px;
+  box-shadow: 0 -11px 39px rgba(0, 0, 0, 0.25);
+}
+
+body > section.feedback-rate > div > div.feedback-text > h2{
+  font-size: 50px;
+}
+body > section.feedback-rate > div > div.feedback-text > h2::before{
+  content: "";
+  width: 30%;
+  height: 4px;
+  display: block;
+  background-color: red;
+}
+body > section.feedback-rate > div > div.feedback-text > a{
+  color: #8D5CF6;
+  padding: 0 0;
+  width: 139px;
+}
+body > section.feedback-rate > div > div.feedback-text > a:hover{
+  background-color: transparent;
+  transition: all 0.3s;
+  transform: translateX(5px);
+}
+body > section.feedback-rate > div > div.feedback-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body > section.feedback-rate > div > div.feedback-text > h2::before {
+  content: "";
+  width: 25%;
+  height: 4px;
+  display: block;
+  background-color: red;
+}
+body > section.feedback-rate > div > div.feedback-text > p{
+  font-weight: 200;
+  width: 500px;
+}
+
+.user-rating .container{
+  margin: 10%;
+  color: white  ;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+body > section.user-rating > div > div.txt-cont > span{
+  color: #8D5CF6;
+  font-weight: 800;
+}
+.user-rating .container .box-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+.user-rating .container .box-cont .ratbox{
+  text-align: center;
+  background-color: white;
+  color: black;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 59px;
+}
+
+.txt-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.txt-cont h2{
+  padding: 20px 0;
+  font-size: 50px;
+  width: 540px;
+}
+.txt-cont > p{
+  font-weight: 200;
+  width: 1107px;
+}
+
+.about-us{
+  height: 1000px;
+  color: white;
+  text-align: center;
+
+}
+.about-us h2{
+  font-size: 50px;
+}
+.about-us p {
+  margin-top: 27px;
+  font-weight: 200;
+  width: 610px;
+}
+.about-us img{
+  width: 500px;
+  border-radius: 10px;
+}
+#about-uss > div{
+  display: flex;
+  margin: 327px 10%;
+  justify-content: center;
+  gap: 62px;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  width: 12px; 
+  
+}
+
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  width: 12px; 
+  
+}
+
+html::-webkit-scrollbar-track, 
+body::-webkit-scrollbar-track {
+  background-color: transparent; 
+  border-radius: 10px; 
+}
+
+html::-webkit-scrollbar-thumb, 
+body::-webkit-scrollbar-thumb {
+  background-color: #4a61aa;
+  border-radius: 10px; 
+  border: 3px solid transparent; 
+  background-clip: padding-box; 
+}

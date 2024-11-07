@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="stdntAdminStyle.css">
+</head>
+<body>
+    <%-include("partials/header.ejs")%>
+    <div class="BigForm-Cont"></div>
+    <form id="admin-StudentForm" method="post">
+  
+        <label for="studentName" id="label-name">Name</label>
+        <input type="text" id="studentName" class="stdnt-input" name="studentName">
+
+        <label for="StdntPass" id="label-class">Student Password</label>
+        <input type="text" id="StdntPass" class="stdnt-input" name="studentPass">
+  
+        <label for="studentGrade" id="label-grade">Grade</label>
+        <input type="text" id="studentGrade" class="stdnt-input" name="studentGrade">
+  
+        <label for="ClassNum" id="label-class">Class Number</label>
+        <input type="text" id="ClassNum" class="stdnt-input" name="classNum">
+
+
+  
+        <div class="sub-cont">
+            <input id="post" class="submit-btn" type="submit" value="Register User" formaction="/register-student">
+            <input style="background-color: #E74040;" id="post" class="submit-btn" type="submit" value="Register Teacher ?" formaction="/add-teacher">
+        </div>
+        <%if (locals.message){%>
+            <p style="color: white;"><%=message%></p>
+        <%}%>
+    </form>
+    <div class="emptyTest" style="height: 300px; width: 100%;"></div>
+
+    <%-include("partials/footer.ejs")%>
+
+</html>
