@@ -10,96 +10,109 @@
 
 <body>
     <%-include("partials/header.ejs")%>
-
+    <div class="decore-section"></div>
     <div class="bigg-cont">
+        
+        <div class="search-bar">
+            <h2>Get Help</h2>
+            <div class="search-input">
+                <img src="assets/search-icon.svg" alt="search icon" class="search-bar-icon">
+                <input type="text" placeholder="FAQ, Videos, Documentation, and Forums" class="inner-search">
+            </div>
+        </div>
         <div class="Faq-cont">
-            <h2>Frequently Asked Questions</h2>
-            <div class="ques-cont">
-                <div class="small-cont">
-                    <p class="question">
-                        What types of courses does GenZ Academy offer?
-    
-                    </p>
-                    <p class="answer">
-                        We offer a wide range of courses, including coding, graphic design,
-                        artificial intelligence, entrepreneurship, and more. Each course is
-                        designed to be interactive and engaging for young learners.
-    
-                    </p>
+            <div class="general">
+                <h2>General</h2>
+                <div class="ques-cont">
+                    <div class="small-cont">
+                        <p class="question">
+                            <span><img src="assets/arrow.svg" alt=""></span>
+                            What types of courses does GenZ Academy offer?
+                        </p>
+                        <p class="answer">
+                            We offer a wide range of courses, including coding, graphic design,
+                            artificial intelligence, entrepreneurship, and more. Each course is
+                            designed to be interactive and engaging for young learners.
+        
+                        </p>
+                    </div>
+                    <div class="small-cont">
+                        <p class="question">
+                            <span><img src="assets/arrow.svg" alt=""></span>
+                            Are classes offered online, or do I need to attend in-person?
+        
+                        </p>
+                        <p class="answer">
+                            We offer both online and in-person classes to fit your needs. You can
+                            learn from the comfort of home or join us on our
+                            campus for a more hands-on experience.
+        
+                        </p>
+                    </div>
+                    <div class="small-cont">
+                        <p class="question">
+                            <span><img src="assets/arrow.svg" alt=""></span>
+                            Who is eligible to join GenZ Academy?
+        
+                        </p>
+                        <p class="answer">
+                            GenZ Academy welcomes students aged 14-16 who are eager
+                            to learn and build new skills, regardless of previous experience.
+        
+                        </p>
+                    </div>
+                    <div class="small-cont">
+                        <p class="question">
+                            <span><img src="assets/arrow.svg" alt=""></span>
+                            Do I need any prior knowledge to join a course?
+                        </p>
+                        <p class="answer">
+                            No prior experience is required! Our courses
+                            are structured to support beginners and build
+                            up knowledge step-by-step, so everyone can follow along.
+                        </p>
+                    </div>
+                    <div class="small-cont">
+                        <p class="question">
+                            <span><img src="assets/arrow.svg" alt=""></span>
+                            How long do courses usually last?
+        
+                        </p>
+                        <p class="answer">
+                            Our courses range from 4 to 12 weeks, depending on
+                            the topic and level. We balance length with focused
+                            content to maximize learning and enjoyment.
+        
+                        </p>
+                    </div>
+                    <div class="small-cont">
+                        <p class="question">
+                            <span><img src="assets/arrow.svg" alt=""></span>
+                            Will I receive a certificate after completing the course?
+        
+                        </p>
+                        <p class="answer">
+                            Yes, upon successful completion, you’ll
+                            receive an official GenZ Academy certificate
+                            to showcase your new skills!
+        
+                        </p>
+                    </div>
                 </div>
-                <div class="small-cont">
-                    <p class="question">
-                        Are classes offered online, or do I need to attend in-person?
-    
-                    </p>
-                    <p class="answer">
-                        We offer both online and in-person classes to fit your needs. You can
-                        learn from the comfort of home or join us on our
-                        campus for a more hands-on experience.
-    
-                    </p>
-                </div>
-                <div class="small-cont">
-                    <p class="question">
-                        Who is eligible to join GenZ Academy?
-    
-                    </p>
-                    <p class="answer">
-                        GenZ Academy welcomes students aged 14-16 who are eager
-                        to learn and build new skills, regardless of previous experience.
-    
-                    </p>
-                </div>
-                <div class="small-cont">
-                    <p class="question">
-                        Do I need any prior knowledge to join a course?
-                    </p>
-                    <p class="answer">
-                        No prior experience is required! Our courses
-                        are structured to support beginners and build
-                        up knowledge step-by-step, so everyone can follow along.
-                    </p>
-                </div>
-                <div class="small-cont">
-                    <p class="question">
-                        How long do courses usually last?
-    
-                    </p>
-                    <p class="answer">
-                        Our courses range from 4 to 12 weeks, depending on
-                        the topic and level. We balance length with focused
-                        content to maximize learning and enjoyment.
-    
-                    </p>
-                </div>
-                <div class="small-cont">
-                    <p class="question">
-                        Will I receive a certificate after completing the course?
-    
-                    </p>
-                    <p class="answer">
-                        Yes, upon successful completion, you’ll
-                        receive an official GenZ Academy certificate
-                        to showcase your new skills!
-    
-                    </p>
-                </div>
+            </div>
+            <div class="q-links">
+                <h2>Quick Links</h2>
+                <div class="q-link"><h4>Join the Community</h4>
+                <p>get an easy access to a community server on discord</p></div>
+                <div class="q-link"><h4>Read Documentation and Guides</h4>
+                <p>easy always access to our online and offline educational sources</p></div>
+                <div class="q-link"><h4>Hire An Expert</h4>
+                <p>get an access to large number of experts in various courses</p></div>
             </div>
     
         </div>
-        <div class="con-container" style="color: white;">
-            <h2>Ask a Question</h2>
-            <form action="https://api.web3forms.com/submit" method="POST" class="left-card">
-                <input type="hidden" name="access_key" value="77c1e126-5aa7-444b-9537-e5505be72dc2">
-                <input type="text" name="name" class="name contact-input" placeholder="Name" required>
-                <input type="email" name="email" class="email contact-input" placeholder="Email" required>
-                <textarea name="message" style="resize: none;" class="message contact-input" placeholder="Question" required></textarea>
-                <button type="submit" class="submit contacat-input">Submit <img src="assets/submit-image.svg" alt="an okay icon"></button>
-            </form>            
-        </div>
     </div>
     
-    <div class="emptyTest" style="height: 300px; width: 100%;"></div>
 
     <%-include("partials/footer.ejs")%>
 
