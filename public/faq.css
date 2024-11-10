@@ -29,7 +29,7 @@ body{
 }
 .q-link {
     background: rgba(217, 217, 217, 0.65);
-    border-radius: 10px;
+    border-radius: 33px;
     padding: 10px;
     width: 412px;
     height: 119px;
@@ -106,8 +106,7 @@ body > div.bigg-cont > div.search-bar > div > input{
 .ques-cont {
     display: flex;
     gap: 23px;
-    margin: 70px;
-    margin-top: 32px;
+    margin: 23px;
     flex-wrap: wrap;
     color: white;
     justify-content: center;
