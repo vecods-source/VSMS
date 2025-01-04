@@ -11,7 +11,7 @@ const dp = new pg.Client({
   port : 5432,
 });
 const app = express();
-const port = 3005;
+const port = 3006;
 
 dp.connect();
 

@@ -258,9 +258,15 @@ body > section.team > div > div.ourTeam > p{
   gap: 75px;
   color: white;
 }
+.vid1{
+  width: 100%;
+  height: 100%;
+  max-width: 657px;
+  max-height: 370px;
+}
 .vid1 video{
-  width: 657px;
-  height: 370px;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 0 -11px 39px rgba(0, 0, 0, 0.25);
 }
@@ -348,7 +354,6 @@ body > section.user-rating > div > div.txt-cont > span{
 }
 
 .about-us{
-  height: 1000px;
   color: white;
   text-align: center;
 
@@ -368,6 +373,7 @@ body > section.user-rating > div > div.txt-cont > span{
 #about-uss > div{
   display: flex;
   margin: 327px 10%;
+  margin-bottom: 120px;
   justify-content: center;
   gap: 62px;
 }
